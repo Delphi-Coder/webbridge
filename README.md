@@ -1,7 +1,7 @@
 
 # WebBridge
 
-WebBridge is a lightweight, C-based HTTP server designed for simple file sharing and directory browsing. It allows users to upload and download files, submit text, and navigate directories through a user-friendly web interface. Ideal for small-scale file transfers, educational purposes, or as a foundation for learning about network programming in C.
+WebBridge is a lightweight, C-based HTTP server designed for simple file sharing and directory browsing. It allows users to upload and download files, submit text, create new folders, and navigate directories through a user-friendly web interface. The primary idea behind WebBridge is to make file and text sharing between mobile devices (such as Android and iPhone) and a computer as easy as possible, without the need to install any software or app on the phone. It is also ideal for small-scale file transfers, educational purposes, or as a foundation for learning about network programming in C.
 
 ## Features
 
@@ -277,4 +277,4 @@ This server is intended for educational purposes and small-scale use. It may not
 
 ---
 
-**WebBridge** aims to bridge the gap between simplicity and functionality, providing an easy way to share files over HTTP with minimal setup. Enjoy exploring and customizing the server to fit your needs!
+**WebBridge** aims to bridge the gap between simplicity and functionality, providing an easy way to share files and text between mobile devices and computers over HTTP with minimal setup, making it ideal for users who need quick file transfers without installing additional apps or software. Enjoy exploring and customizing the server to fit your needs!
