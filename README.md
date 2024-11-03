@@ -13,7 +13,8 @@ WebBridge is a lightweight, C-based HTTP server designed for simple file sharing
 - **MIME Type Handling**: Serves files with appropriate `Content-Type` headers based on file extensions, ensuring correct handling by browsers.
 - **Customizable Interface**: Simple HTML and CSS styling, easily customizable to suit your preferences.
 - **Alternating Row Colors**: Enhanced table readability with alternating row colors in the directory listing.
-
+- **New Folder Creation**: Create new folders within the current directory directly through the web interface.
+- **Default index.html Serving**: If an index.html file is present in a directory, it will be served as the default page.
 ## Supported File Types
 
 Files with the following extensions are properly handled and displayed in the browser:
