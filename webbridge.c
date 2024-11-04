@@ -201,6 +201,7 @@ void *memmem(const void *haystack, size_t haystacklen,
     return NULL;
 }
 
+// Send directory listing as an HTML response with additional features
 void send_directory_listing(int client_socket, const char *request_path) {
     DIR *dir;
     struct dirent *entry;
@@ -280,7 +281,7 @@ void send_directory_listing(int client_socket, const char *request_path) {
                         ".container { padding: 20px; }"
                         "h2 { color: #333; font-size: 24px; margin-bottom: 10px; }"
                         "form { margin-bottom: 15px; padding: 15px; background-color: #fff; border-radius: 5px; }"
-                        "input[type=file], textarea, input[type=text] { padding: 10px; width: 100%%; font-size: 16px; margin-bottom: 10px; }"
+                        "input[type=file], textarea, input[type=text] { padding: 10px; width: 100%%; font-size: 16px; margin-bottom: 10px; box-sizing: border-box;}"
                         "input[type=submit], button { padding: 10px 20px; background-color: lightblue; width: 100%%; color: black; border: none; cursor: pointer; font-size: 16px; border-radius: 5px; }"
                         "input[type=submit]:hover, button:hover { background-color: lightblue; }"
                         "table { width: 100%%; border-collapse: collapse; margin-bottom: 20px; }"
