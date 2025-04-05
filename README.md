@@ -4,7 +4,7 @@
 WebBridge is a lightweight, C-based HTTP server designed for simple file sharing and directory browsing. It allows users to upload and download files, submit text, create new folders, and navigate directories through a user-friendly web interface. The primary idea behind WebBridge is to make file and text sharing between mobile devices (such as Android and iPhone) and a computer as easy as possible, without the need to install any software or app on the phone. It is also ideal for small-scale file transfers, educational purposes, or as a foundation for learning about network programming in C.
 
 ## Features
-
+- **Multiplatform Support**: Runs on Linux and Windows.
 - **Directory Listing**: Browse directories with detailed listings, including file names, sizes, and last modified dates.
 - **File Uploading**: Upload multiple files directly to the server via a web form.
 - **File Downloading**: Download files by clicking on them in the directory listing.
@@ -182,6 +182,12 @@ make CFLAGS="-Wall -Wextra -O2 -g"
 sudo make install PREFIX=/usr
 ```
 
+
+### Compiling on Windows
+WebBridge v2.0 adheres to the C98 standard, making it compatible with older compilers like TDM-GCC or MSVS 2010:
+- **TDM-GCC**: Use `gcc -std=c98 -o webbridge webbridge.c -lws2_32` to compile, linking the Winsock library.
+- **MSVS 2010**: Create a Win32 Console Application, add `webbridge.c`
+
 ## Security Considerations
 
 - **Input Sanitization**: The server sanitizes paths to prevent directory traversal attacks.
@@ -271,6 +277,11 @@ if (strcmp(extension, ".pdf") == 0) {
 
 After making changes, recompile the program with `make`.
 
+## Changelog
+- **v2.0.0**: Multiplatform support (Linux/Windows), C98 standard for compatibility with compilers like TDM-GCC and MSVS 2010 (April 2025).
+- **v1.0.0**: Original Linux-only version. (available on Legacy branch)
+
+  
 ## Disclaimer
 
 This server is intended for educational purposes and small-scale use. It may not be suitable for production environments without further enhancements and security audits.
